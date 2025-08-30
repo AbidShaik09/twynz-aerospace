@@ -29,4 +29,4 @@ jobs:
 
       - name: Deploy to VM
         run: |
-          rsync -av --delete dist/ /var/www/html/  # assuming nginx serves /var/www/html/
+          rsync -av --delete dist/ /home/opc/myserver/  # assuming nginx serves /var/www/html/
