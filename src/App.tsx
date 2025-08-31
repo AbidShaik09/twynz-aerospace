@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="holder">
       <Navbar />
-      <div className="p-1 md:p-4">
+      <div className="p-3 md:p-4">
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/home" element={<Home />} />
