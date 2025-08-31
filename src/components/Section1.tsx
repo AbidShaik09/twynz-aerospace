@@ -4,13 +4,13 @@ const Section1 = () => {
   return (
     <>
       <div className="flex flex-col-reverse md:flex-row items-center">
-        <div className="w-full md:w-4/10 py-2 md:p-10 pl-10 flex justify-center items-center">
+        <div className="w-full md:w-4/10 py-2 md:p-10 p-1 sm:pl-10 flex justify-center items-center">
           <div className="text-content">
-            <div className="text-xl text-secondary">
+            <div className="text-md sm:text-xl text-secondary">
               Sustainable. Scalable. Transformative.
             </div>
 
-            <div className="font-bold text-4xl ">
+            <div className="font-bold text-2xl  sm:text-3xl lg:text-4xl">
               Engineering the Future of Flight
             </div>
 
