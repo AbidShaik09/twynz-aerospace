@@ -1,5 +1,11 @@
+import Section1 from "../../components/Section1";
+
 const Home = () => {
-  return <div>Welcome Home</div>;
+  return (
+    <>
+      <Section1 />
+    </>
+  );
 };
 
 export default Home;
