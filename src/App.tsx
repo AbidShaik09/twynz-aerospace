@@ -6,7 +6,7 @@ import MED from "./pages/services/MED";
 
 export default function App() {
   return (
-    <div>
+    <div className="navbar">
       <nav style={{ display: "flex", gap: "1rem" }}>
         <Link to="/">Home</Link>
         <Link to="/about">About Us</Link>
