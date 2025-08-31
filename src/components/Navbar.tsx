@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 // Define nav items here
 const navItems = [
-  { label: "Home", link: "/" },
+  { label: "Home", link: "/home" },
   { label: "About Us", link: "/about" },
   { label: "Careers", link: "/careers" },
   { label: "Services-Med", link: "/services-med" },
@@ -14,19 +14,15 @@ const Navbar = () => {
 
   const navlink = useNavigate();
   return (
-    <nav className="relative flex items-center justify-between p-4 navbar text-white">
+    <nav className="relative flex items-center justify-between sm:justify-start p-4 navbar text-white  ">
       {/* Logo */}
       <div>
         <div
-          className="w-25 flex flex-col items-center justify-center flex flex-col items-center justify-center relative cursor-pointer group"
-          onClick={() => navlink("/")}
+          className="w-25 flex flex-col items-center justify-center flex flex-col items-center justify-center cursor-pointer "
+          onClick={() => navlink("/home")}
           style={{ cursor: "pointer" }}
         >
           <img src="images/logo.png" alt="" className="w-full h-auto" />
-          {/* on hover, we want something like tooltip displaying text */}
-          <span className="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white text-xs rounded px-2 py-1 whitespace-nowrap">
-            Home
-          </span>
         </div>
       </div>
 
