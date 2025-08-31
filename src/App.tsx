@@ -7,12 +7,19 @@ import MED from "./pages/services/MED";
 export default function App() {
   return (
     <div className="holder">
-      <nav style={{ display: "flex", gap: "1rem" }}>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/careers">Careers</Link>
-        <Link to="/services-med">Services-Med</Link>
-      </nav>
+      <div className="navbar py-4 flex gap-5">
+        <div>
+          <div className="w-20">
+            <img src="images/logo.png" alt="" className="w-full h-auto" />
+          </div>
+        </div>
+        <nav className="flex gap-5">
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/careers">Careers</Link>
+          <Link to="/services-med">Services-Med</Link>
+        </nav>
+      </div>
       <div className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
