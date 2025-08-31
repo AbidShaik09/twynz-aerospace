@@ -33,4 +33,4 @@ jobs:
 
       - name: Restart server
         run: |
-          sudo systemctl restart reactserver.service
+          sudo systemctl restart nginx
