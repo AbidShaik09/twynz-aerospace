@@ -1,7 +1,7 @@
 const Section1 = () => {
   return (
     <div className="flex flex-col-reverse sm:flex-row">
-      <div className="w-full sm:w-4/10 py-10 pl-10 flex justify-center items-center">
+      <div className="w-full sm:w-4/10 py-2 sm:p-10 pl-10 flex justify-center items-center">
         <div className="text-content">
           <div className="text-xl text-secondary">
             Sustainable. Scalable. Transformative.
