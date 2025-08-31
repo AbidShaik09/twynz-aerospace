@@ -29,7 +29,7 @@ jobs:
 
       - name: Deploy to VM
         run: |
-          rsync -av --delete dist/ /home/opc/myserver/deploy/  # copy to python server
+          rsync -av --delete dist/ /var/www/react-app/  # copy to nginx server
 
       - name: Restart server
         run: |
