@@ -8,7 +8,7 @@ const Button = (prop: {
     <button
       className={`${type} text-xs`}
       onClick={onClick}
-      style={{ border: "4px" }}
+      style={{ border: "4px", borderRadius: "20px" }}
     >
       {label}
     </button>
