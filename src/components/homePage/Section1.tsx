@@ -1,4 +1,4 @@
-import Button from "../Button";
+import { Button } from "../ui/button";
 
 const Section1 = () => {
   return (
@@ -23,12 +23,12 @@ const Section1 = () => {
               engineering consultancy.
             </div>
             <div className="flex gap-6 my-6 flex-col lg:flex-row md:flex-col sm:flex-row ">
-              <Button
-                label="EXPLORE OUR EVTOL VISION"
-                onClick={() => {}}
-                type="secondary"
-              />
-              <Button label="REQUEST ENGINEERING SERVICES" onClick={() => {}} />
+              <Button onClick={() => {}}>
+                <span className="text-xs">EXPLORE OUR EVTOL VISION</span>
+              </Button>
+              <Button onClick={() => {}}>
+                <span className="text-xs">REQUEST ENGINEERING SERVICES</span>
+              </Button>
             </div>
           </div>
         </div>
