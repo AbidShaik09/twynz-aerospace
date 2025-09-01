@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const Section2 = () => {
+  const navigate = useNavigate();
   return (
     <div className="mb-5">
       <div className="ml-10">
@@ -37,7 +39,12 @@ const Section2 = () => {
               aerospace, automotive, and manufacturing industries.
             </p>
             <div className="flex gap-6 my-6 flex-col lg:flex-row md:flex-col sm:flex-row ">
-              <Button title="EXPLORE MED SERVICES" onClick={() => {}}>
+              <Button
+                title="EXPLORE MED SERVICES"
+                onClick={() => {
+                  navigate("/services-med");
+                }}
+              >
                 <span className="text-xs">EXPLORE MED SERVICES</span>
               </Button>
             </div>

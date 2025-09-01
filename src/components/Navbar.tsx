@@ -32,7 +32,7 @@ const Navbar = () => {
           <Link
             key={item.link}
             to={item.link}
-            className="hover:text-yellow-400 navbar "
+            className=" navbar text-white hover:text-white-400"
           >
             {item.label}
           </Link>

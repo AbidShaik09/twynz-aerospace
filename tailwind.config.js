@@ -5,12 +5,12 @@ export default defineConfig({
   theme: {
     extend: {
       colors: {
-        primary: "#646cff", // link color
-        primaryHover: "#535bf2", // link hover
+        primary: "#ffffffff", // link color
+        primaryHover: "#c59230", // link hover
         bgDark: "#242424", // dark background
-        bgLight: "#ffffff", // light background
+        bgLight: "#242424", // light background
         btnDark: "#1a1a1a", // button dark
-        btnLight: "#f9f9f9", // button light
+        btnLight: "#1a1a1a", // button light
 
         secondary: "#c59230",
       },

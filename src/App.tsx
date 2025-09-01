@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 
 export default function App() {
   return (
-    <div className="holder">
+    <div className="holder h-full">
       <Navbar />
       <div className="p-3 md:p-4">
         <Routes>
