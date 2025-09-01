@@ -6,9 +6,14 @@ const Button = (prop: {
   const { type = "primary", label, onClick } = prop;
   return (
     <button
-      className={`${type} text-xs`}
+      className={`${type} text-xs `}
       onClick={onClick}
-      style={{ border: "4px", borderRadius: "20px", color: "#1a1a1a" }}
+      style={{
+        border: "4px",
+        borderRadius: "20px",
+        color: "#e7aa32",
+        background: "#1a1a1a",
+      }}
     >
       {label}
     </button>
