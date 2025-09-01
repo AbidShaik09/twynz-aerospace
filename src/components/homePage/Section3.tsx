@@ -1,5 +1,10 @@
-import Button from "../Button";
-
+import { Button } from "../ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 const Section3 = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row items-center">
@@ -19,13 +24,34 @@ const Section3 = () => {
             travel inefficiencies while building a platform for advanced
             engineering consultancy.
           </div>
-          <div className="flex gap-6 my-6 flex-col lg:flex-row md:flex-col sm:flex-row ">
-            <Button
-              label="EXPLORE OUR EVTOL VISION"
-              onClick={() => {}}
-              type="secondary"
-            />
-            <Button label="REQUEST ENGINEERING SERVICES" onClick={() => {}} />
+          <div className="flex gap-6 my-6 flex-col lg:flex-row md:flex-col sm:flex-row h-60">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>Congested Roads</AccordionTrigger>
+                <AccordionContent>
+                  Even with cleaner cars, average commute times remain
+                  unchanged.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger>Slow Trains</AccordionTrigger>
+                <AccordionContent>
+                  Regional trains are often slow, delayed, or under-capacity.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>Inefficient Aviation</AccordionTrigger>
+                <AccordionContent>
+                  {`Jet-fueled aircraft aren’t viable for <500 km routes due to cost, emissions, and airport constraints.`}
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>Fragmented Connectivity</AccordionTrigger>
+                <AccordionContent>
+                  {`Commuting between airports or cities like Amsterdam–Brussels–Luxembourg is a logistical challenge.`}
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </div>
@@ -40,12 +66,11 @@ const Section3 = () => {
             At Twynz Aerospace Ltd., we blend engineering excellence,
             sustainable technology, and startup agility to create meaningful
             transportation solutions for a better-connected future.
-            Headquartered in London, UK, we focus on solving short-distance
-            travel inefficiencies while building a platform for advanced
-            engineering consultancy.
           </div>
           <div className="my-6">
-            <Button label="ENQUIRE NOW" onClick={() => {}} />
+            <Button title="ENQUIRE NOW" onClick={() => {}}>
+              <span className="text-xs">ENQUIRE NOW</span>
+            </Button>
           </div>
         </div>
       </div>

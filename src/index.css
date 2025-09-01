@@ -1,3 +1,4 @@
+@import "tailwindcss";
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-* {
+.holder {
   background-color: #242424;
   color: #ddd;
 }
@@ -88,7 +89,7 @@ button:focus-visible {
 
 .h3-accent {
   color: "#FFFFFF";
-  font-family: 'Inter', Helvetica, Arial, Lucida, sans-serif;
+  font-family: "Inter", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.4em;

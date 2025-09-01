@@ -1,11 +1,13 @@
-import Button from "../Button";
+import { Button } from "../ui/button";
 
 const Section2 = () => {
   return (
     <div className="mb-5">
       <div className="ml-10">
-        <h4 className="h4-accent ml-10">What we do</h4>
-        <h1 className="ml-10">Let's Touch Base!</h1>
+        <div className="text-md sm:text-xl text-secondary">What We Do</div>
+        <div className="font-bold text-2xl  sm:text-3xl lg:text-4xl">
+          Let's Touch Base!
+        </div>
       </div>
 
       <div className="flex flex-col-reverse md:flex-row items-center">
@@ -18,11 +20,9 @@ const Section2 = () => {
               aerospace innovation.
             </p>
             <div className="flex gap-6 my-6 flex-col lg:flex-row md:flex-col sm:flex-row ">
-              <Button
-                label="MORE ON OUR AIRCRAFT"
-                onClick={() => {}}
-                type="secondary"
-              />
+              <Button title="MORE ON OUR AIRCRAFT" onClick={() => {}}>
+                <span className="text-xs">MORE ON OUR AIRCRAFT</span>
+              </Button>
             </div>
           </div>
         </div>
@@ -37,11 +37,9 @@ const Section2 = () => {
               aerospace, automotive, and manufacturing industries.
             </p>
             <div className="flex gap-6 my-6 flex-col lg:flex-row md:flex-col sm:flex-row ">
-              <Button
-                label="EXPLORE MED SERVICES"
-                onClick={() => {}}
-                type="secondary"
-              />
+              <Button title="EXPLORE MED SERVICES" onClick={() => {}}>
+                <span className="text-xs">EXPLORE MED SERVICES</span>
+              </Button>
             </div>
           </div>
         </div>
