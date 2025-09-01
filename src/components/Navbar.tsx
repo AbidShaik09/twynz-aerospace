@@ -22,17 +22,17 @@ const Navbar = () => {
           onClick={() => navlink("/home")}
           style={{ cursor: "pointer" }}
         >
-          <img src="images/logo.png" alt="" className="w-full h-auto" />
+          <img src="images/logo.png" alt="" className="w-full h-auto navbar " />
         </div>
       </div>
 
       {/* Desktop Links */}
-      <div className="hidden sm:flex gap-5">
+      <div className="hidden sm:flex gap-5 navbar ">
         {navItems.map((item) => (
           <Link
             key={item.link}
             to={item.link}
-            className="hover:text-yellow-400"
+            className="hover:text-yellow-400 navbar "
           >
             {item.label}
           </Link>
